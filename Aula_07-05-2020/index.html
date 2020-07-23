@@ -9,39 +9,81 @@
     <style>
 
         *{
-            margin: 10px;
-            padding: 0
-        ;
+            margin: 0;
+            padding: 0;
         }
-        li{
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bolder;
+
+        body{
+            background-color: #FFE4E1;
+        }
+         a{
+                color: #363636;
+                text-decoration: none;
+            }
+         li{
+             font-family: Arial, Helvetica, sans-serif;
             font-size: 17px;
         }
         h1{
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
             font-size: 30px;
         }
         p{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
         }
-        body{
-            background-color: #FFE4E1;
+        header{
+            position: sticky;
+            top: 0;
         }
-            #titulo-da-pagina {
-                background-color: 		#FFFACD;
-            }
-            a{
-                color: #363636;
-            }
-    
+        .topo{
+            background-color: #F8F8FF;
+            height: 82px;
+            text-align: center;
+        }
+        .logo{
+            width: 150px;
+            float: left;
+            padding: 5px;
+        }
+        #img-logo{
+            width: 60%;
+        }
+        .titulo{
+            display: inline-block;
+            margin: 25px auto;
+        }
+        .barra-topo{
+            height: 25px;
+            background-color: 	#D2B48C;
+        }
+        .card{
+            background-color: #fff;
+            padding: 25px;
+            margin-top: 15px;
+            margin-left: 100px;
+            margin-right: 100px;
 
-
+        border-radius: 15px;
+        }
+        .text-center{
+            text-align: center;
+        }
     </style>
     <body>
-        <h1 id="titulo-da-pagina" style="" class=""> Receitas </h1>
+
+         <header>
+            <div class="topo">
+                <div class="logo">
+                    <img id="img-logo" src="../Aula_07-05-2020/img/logo.png" alt="logo da pagina">
+                </div>
+               <h1 class="titulo"> Receitas </h1>
+            </div>
+            <div class="barra-topo"></div>
+        </header>
+
+        <div class="card">
+
          <p>Escolha uma opção:</p>
          <ul>
              <li> <a href="receitas_doces/index.html"> Receitas doces </a> </li>
@@ -49,10 +91,17 @@
 
          </ul>
 
+        </div>
+        <div class="card text-center">
+
+            <img src="img/animacao.gif" alt="Gif da hello kitty com pudins" />
+
+        </div>
+
+
          <br/>
          <br/>
 
-         <img src="img/animacao.gif" alt="Gif de um liquidificador de mexendo" />
     </body>
 
 </html> 
